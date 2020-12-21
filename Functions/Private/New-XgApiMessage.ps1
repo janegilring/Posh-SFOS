@@ -15,7 +15,7 @@ function New-XgApiMessage {
 
         [Parameter(Mandatory, ParameterSetName = 'Get')]
         [Parameter(Mandatory, ParameterSetName = 'Remove')]
-        [ValidateSet('User', 'Certificate', 'SecurityPolicy', 'SecurityPolicyGroup')]
+        [ValidateSet('User', 'Certificate', 'SecurityPolicy', 'SecurityPolicyGroup', 'VPNIPSecConnection')]
         [string]$Entity,
 
         [Parameter(Mandatory = $false, ParameterSetName = 'Get')]
